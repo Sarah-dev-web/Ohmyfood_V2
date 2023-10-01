@@ -14,4 +14,23 @@
 }
 
 
+.nouveau{
+    position: relative;
+}
+.nouveau::before{
+    content: "Nouveau";
+    position: absolute;
+    height: 29px;
+    width: 80px;
+    background-color:map-get($colors,light-green);
+    color: map-get($colors,dark-green );
+    font-size: 14px;
+    display: grid;
+    place-items: center;
+    border-radius: 2px;
+    right: 1rem;
+    top: 1rem;
+
+}
+
 
