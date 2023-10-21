@@ -8,5 +8,15 @@ $colors:(
     black:#000,
     purple-color:#9356DC,
     pink-color:#FF79DA,
-)
+);
+
+@mixin font-awesome($font-weight: 400){
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing:antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: $font-weight;
+}
 

@@ -1,3 +1,11 @@
+ header .fa-arrow-left::before{
+    font-size: 30px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+
 .image-restaurant img{
     display: block;
     width: 100%;
@@ -5,10 +13,7 @@
     object-fit: cover;
 }
 @media screen and (min-width : 1024px) {
-    .restaurant-menu{
-        padding-left: 180px;
-        padding-right: 180px;
-    }
+   
 } 
     
 
@@ -223,5 +228,13 @@
      
      }
     
-
+    header .fa-arrow-left::before{
+        font-size: 20px;
+    }
+    .restaurant-menu{
+        padding-left: 180px;
+        padding-right: 180px;
+    }
  } 
+
+

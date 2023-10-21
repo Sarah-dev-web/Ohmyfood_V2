@@ -360,6 +360,13 @@ footer .footer__text a {
     text-align: center;
   }
 }
+header .fa-arrow-left::before {
+  font-size: 30px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
 .image-restaurant img {
   display: block;
   width: 100%;
@@ -368,12 +375,6 @@ footer .footer__text a {
      object-fit: cover;
 }
 
-@media screen and (min-width: 1024px) {
-  .restaurant-menu {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-}
 .resto__title {
   margin-top: -30px;
   background-color: #F6F6F6;
@@ -546,5 +547,12 @@ footer .footer__text a {
 @media screen and (min-width: 1024px) {
   .resto__title .heart i {
     right: 185px;
+  }
+  header .fa-arrow-left::before {
+    font-size: 20px;
+  }
+  .restaurant-menu {
+    padding-left: 180px;
+    padding-right: 180px;
   }
 }/*# sourceMappingURL=main-style.css.map */
