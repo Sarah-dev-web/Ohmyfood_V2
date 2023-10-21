@@ -19,10 +19,10 @@ h1{
 
         p{
             margin: 0;
-            font-size:16px ;
-        i{
-            color:map-get($colors,dark_grey )
-        }
+            font-size:16px;
+            color:#353535;
+            
+        
     
 
 }
@@ -39,15 +39,16 @@ h1{
         margin-top: 39px;
         margin-bottom: 0;
         line-height: 28px;
-        width: 65%;
+        width: 72%;
         font-weight: 700;
         font-size: 24px;
+        margin-bottom: 18px;
     }
     
     p{
        
     font-size: 18px;
-    font-weight: 300;
+    font-weight:lighter;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: center;
@@ -91,10 +92,7 @@ h1{
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         margin-bottom: 25px;
 
-        &:hover {
-            background-color: lighten(#F6F6F6, 10%);
-            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
-          }
+      
         
     }
     & li::before{
@@ -137,6 +135,23 @@ h1{
         grid-template-columns: repeat(1,1fr);
         gap: 18px;
     }
+    @media screen and (min-width: 1024px) {
+        .menu h2{
+            padding-left: 180px ;
+        }
+        .menu_cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 50px;
+            grid-column-gap: 100px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        .menu .card{
+            width: 100%;
+        }
+    }
+    
     
     a{
         background-color: white;
@@ -150,14 +165,11 @@ h1{
         background-color:  #ffffff;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
         height: 251px;
-        border-radius: 4vw;
+        border-radius: 15px;
         flex-grow: 1;
         min-width: 20rem;
         overflow: hidden;
-        &:hover{
-            background-color: lighten(#F6F6F6, 10%);
-            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
-          }
+        
         &__image{
             height: 66%;
             width: 100%;
@@ -199,6 +211,10 @@ h1{
             &:hover{
               opacity: 0;
             }
+            &:active{
+                opacity: 1;
+              }
+          
           }
           .fa-solid{
             color: transparent;
@@ -207,10 +223,17 @@ h1{
             -webkit-background-clip: text;
             opacity: 0;
             z-index: 1;
-            transition: all 500ms ease-in-out;
+            transform: none;
             &:hover{
               opacity: 1;
             }
+            &:active{
+                opacity: 1;
+              }
+            
+            
+
+            
           }
        
     }
@@ -219,3 +242,37 @@ h1{
         margin-bottom: 19px;
     }
 }
+@media screen and (min-width: 1024px) {
+    .menu h2{
+        padding-left: 150px ;
+        padding-top: 30px;
+        margin-bottom: 28px;
+    }
+
+    .tuto {
+        
+        ol{
+            padding-left: 140px ;
+            flex-direction: row;
+        }
+        
+        li{
+            margin-left: 30px;
+            
+            
+        }
+        .tuto_title{
+            margin-bottom: 25px;
+            padding-left: 150px;
+        }
+    }
+        .nos-restaurants h2{
+            font-size: 40px;   
+            line-height: 47px;
+            letter-spacing: 0em;
+            text-align: center;
+    
+        }
+         
+    }
+    
