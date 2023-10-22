@@ -164,6 +164,7 @@ footer .footer__text a {
 @keyframes disappear {
   to {
     opacity: 0;
+    z-index: 0;
   }
 }
 .recherche {
