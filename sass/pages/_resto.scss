@@ -76,8 +76,8 @@
     font-style: italic;
     font-size:28px;
     line-height:40px;
-    position: relative; /* Ajout de la position relative */
-    z-index: 1; /* Met l'élément au premier plan */
+    position: relative;
+    z-index: 1; 
 
     
 }
@@ -88,7 +88,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-   
+    width: 100%;
 
     h3{
         font-weight: 300;
@@ -121,10 +121,13 @@
     padding-left: 1rem;
     font-size: 15px;
     font-weight: 300;
+    
+
 
     }
     h4{
         padding-left: 1rem;
+       
     }
    
     .menus__category{
@@ -135,15 +138,25 @@
         border-radius: 1rem;
         background: map-get($colors , light-grey );
 
+
         .menu-item{
+            width: 100%;
             overflow: hidden;
             display: flex;
             align-items: center;
             border-radius: 1rem;
             box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
-
             padding-right: 0;
             background-color: white;
+            animation:appear 3s;
+            animation-fill-mode: both;
+
+            @for $i from 1 through 3{
+                &:nth-child(#{$i}){
+                    animation-delay: 100ms * $i;
+                }
+            }
+            
             
             .menu-item__prix{
                 margin-left: auto;
@@ -158,11 +171,10 @@
             .menu-item__decription{
                 padding: 1rem;
                 overflow: hidden;
-                h4,p{
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                }
+                white-space: nowrap;
+                background-color: red;
+            
+                
             }
             .menu-item__check{
                 background-color: map-get($colors , light-green );
@@ -188,9 +200,7 @@
                 margin-right: 0;
                 
             }
-            .menu-item__decription{
-                padding: 1rem;
-            }
+           
             
         }
        
@@ -236,5 +246,4 @@
         padding-right: 180px;
     }
  } 
-
 

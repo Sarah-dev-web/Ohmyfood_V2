@@ -19,19 +19,24 @@ h1{
     animation-delay: 5s;
     
 
-    i{
+    i,h3{
         background: linear-gradient(to top, map-get($colors, pink-color), map-get($colors, purple-color));
         background-clip: text;
         color: transparent;
     }
-}
 
-@keyframes disappear{
-    to{
-        opacity:0;
-        z-index: -1;
+    i{
+        position: relative;
+        bottom: 100px;
+    }
+    h3{
+        font-size: 40px;
+        position: relative;
+        bottom: -169px;
     }
 }
+
+
 .recherche{
     width: 100%;
     height: 50px;
