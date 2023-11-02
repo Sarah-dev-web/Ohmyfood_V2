@@ -32,7 +32,7 @@ h1{
     h3{
         font-size: 40px;
         position: relative;
-        bottom: -215px;
+        bottom: -175px;
     }
 }
 
@@ -212,6 +212,7 @@ h1{
             color: black;
             padding-left: 13px;
             position: relative;
+            top:10px;
 
             h3{
                font-size: 18px;
@@ -231,8 +232,8 @@ h1{
             font-size: 30px;
             border: 0;
             right: 1rem;
-             top: 80%;
-           /* transform: translateY(-50%);*/
+             top: 74%;
+          
         }
 
         .fa-regular{
@@ -288,6 +289,7 @@ h1{
         
         li{
             margin-left: 30px;
+            width: 22%;
             
             
         }

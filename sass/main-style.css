@@ -182,7 +182,7 @@ footer .footer__text a {
 .loader h3 {
   font-size: 40px;
   position: relative;
-  bottom: -215px;
+  bottom: -175px;
 }
 
 .recherche {
@@ -332,6 +332,7 @@ footer .footer__text a {
   color: black;
   padding-left: 13px;
   position: relative;
+  top: 10px;
 }
 .menu .card__description h3 {
   font-size: 18px;
@@ -346,8 +347,7 @@ footer .footer__text a {
   font-size: 30px;
   border: 0;
   right: 1rem;
-  top: 80%;
-  /* transform: translateY(-50%);*/
+  top: 74%;
 }
 .menu .card .fa-regular {
   opacity: 1;
@@ -391,6 +391,7 @@ footer .footer__text a {
   }
   .tuto li {
     margin-left: 30px;
+    width: 22%;
   }
   .tuto .tuto_title {
     margin-bottom: 25px;
