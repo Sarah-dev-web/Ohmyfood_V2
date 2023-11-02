@@ -1,4 +1,4 @@
- header .fa-arrow-left::before{
+header .fa-arrow-left::before{
     font-size: 30px;
     position: absolute;
     left: 20px;
@@ -98,6 +98,26 @@
    
         
     }
+
+    .menus__category.delay-entrees {
+        animation: appear 3s;
+        animation-delay: 100ms;
+        animation-fill-mode: both;
+        
+    }
+    
+    .menus__category.delay-plats {
+        animation: appear 3s; 
+        animation-delay: 500ms;
+        animation-fill-mode: both;
+    }
+    
+    .menus__category.delay-desserts {
+        animation: appear 3s;
+        animation-delay: 1000ms;
+        animation-fill-mode: both;
+    }
+    
     .category-title {
         margin-bottom: 10px;
         font-weight: 300;
@@ -148,14 +168,17 @@
             box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
             padding-right: 0;
             background-color: white;
-            animation:appear 3s;
-            animation-fill-mode: both;
+            
 
-            @for $i from 1 through 3{
-                &:nth-child(#{$i}){
-                    animation-delay: 100ms * $i;
+            /*&:hover {
+                h4,
+                p {
+                  width: 50%;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
                 }
-            }
+              } */
             
             
             .menu-item__prix{
@@ -172,7 +195,7 @@
                 padding: 1rem;
                 overflow: hidden;
                 white-space: nowrap;
-                background-color: red;
+                
             
                 
             }
@@ -189,7 +212,7 @@
                 display: grid;
                 place-items: center;
                 background: map-get($colors , white_color );
-                aspect-ratio: 1;
+                height: 2rem;
                 width: 2rem;
                 border-radius: 1rem;
                 color: map-get($colors, light-green);
@@ -246,4 +269,3 @@
         padding-right: 180px;
     }
  } 
-

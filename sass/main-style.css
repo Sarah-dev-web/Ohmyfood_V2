@@ -487,6 +487,21 @@ header .fa-arrow-left::before {
   margin-left: 1rem;
   text-transform: uppercase;
 }
+.menus .menus__category.delay-entrees {
+  animation: appear 3s;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+.menus .menus__category.delay-plats {
+  animation: appear 3s;
+  animation-delay: 500ms;
+  animation-fill-mode: both;
+}
+.menus .menus__category.delay-desserts {
+  animation: appear 3s;
+  animation-delay: 1000ms;
+  animation-fill-mode: both;
+}
 .menus .category-title {
   margin-bottom: 10px;
   font-weight: 300;
@@ -529,17 +544,15 @@ header .fa-arrow-left::before {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   padding-right: 0;
   background-color: white;
-  animation: appear 3s;
-  animation-fill-mode: both;
-}
-.menus .menus__category .menu-item:nth-child(1) {
-  animation-delay: 100ms;
-}
-.menus .menus__category .menu-item:nth-child(2) {
-  animation-delay: 200ms;
-}
-.menus .menus__category .menu-item:nth-child(3) {
-  animation-delay: 300ms;
+  /*&:hover {
+      h4,
+      p {
+        width: 50%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    } */
 }
 .menus .menus__category .menu-item .menu-item__prix {
   margin-left: auto;
@@ -553,7 +566,6 @@ header .fa-arrow-left::before {
   padding: 1rem;
   overflow: hidden;
   white-space: nowrap;
-  background-color: red;
 }
 .menus .menus__category .menu-item .menu-item__check {
   background-color: #99E2D0;
@@ -567,7 +579,7 @@ header .fa-arrow-left::before {
   display: grid;
   place-items: center;
   background: #fff;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
   color: #99E2D0;
