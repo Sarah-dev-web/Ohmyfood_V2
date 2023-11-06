@@ -30,10 +30,10 @@ h1, h2, h3, h4, p {
 /* apparition menu */
 @keyframes appear {
   0% {
-    transform: translateX(-50%);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 .button-explorer {
@@ -490,17 +490,17 @@ header .fa-arrow-left::before {
 }
 .menus .menus__category.delay-entrees {
   animation: appear 3s;
-  animation-delay: 100ms;
+  animation-delay: 200ms;
   animation-fill-mode: both;
 }
 .menus .menus__category.delay-plats {
   animation: appear 3s;
-  animation-delay: 500ms;
+  animation-delay: 1000ms;
   animation-fill-mode: both;
 }
 .menus .menus__category.delay-desserts {
   animation: appear 3s;
-  animation-delay: 1000ms;
+  animation-delay: 2000ms;
   animation-fill-mode: both;
 }
 .menus .category-title {
@@ -535,6 +535,8 @@ header .fa-arrow-left::before {
   margin-left: 1rem;
   border-radius: 1rem;
   background: #F6F6F6;
+  margin-right: 20px;
+  overflow: hidden;
 }
 .menus .menus__category .menu-item {
   width: 100%;
@@ -546,6 +548,9 @@ header .fa-arrow-left::before {
   padding-right: 0;
   background-color: white;
   /*&:hover {
+      .menu-item{
+          margin-right:0;
+      }
       h4,
       p {
         width: 50%;
@@ -561,12 +566,16 @@ header .fa-arrow-left::before {
   padding: 1rem;
   margin-right: 1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
-.menus .menus__category .menu-item .menu-item__decription {
-  padding: 1rem;
+.menus .menus__category .menu-item .menu-item__description {
+  width: 100%;
+  overflow: hidden;
+}
+.menus .menus__category .menu-item .menu-item__description h4, .menus .menus__category .menu-item .menu-item__description p {
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menus .menus__category .menu-item .menu-item__check {
   background-color: #99E2D0;
@@ -587,6 +596,14 @@ header .fa-arrow-left::before {
 }
 .menus .menus__category .menu-item:hover .menu-item__check {
   margin-right: 0;
+}
+.menus .menus__category .menu-item:hover .menu-item__description {
+  width: 60%;
+}
+.menus .menus__category .menu-item:hover .menu-item__description h4, .menus .menus__category .menu-item:hover .menu-item__description p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menus .commande {
   display: flex;

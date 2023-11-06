@@ -101,20 +101,20 @@ header .fa-arrow-left::before{
 
     .menus__category.delay-entrees {
         animation: appear 3s;
-        animation-delay: 100ms;
+        animation-delay: 200ms;
         animation-fill-mode: both;
         
     }
     
     .menus__category.delay-plats {
         animation: appear 3s; 
-        animation-delay: 500ms;
+        animation-delay: 1000ms;
         animation-fill-mode: both;
     }
     
     .menus__category.delay-desserts {
         animation: appear 3s;
-        animation-delay: 1000ms;
+        animation-delay: 2000ms;
         animation-fill-mode: both;
     }
     
@@ -157,6 +157,8 @@ header .fa-arrow-left::before{
         margin-left: 1rem;
         border-radius: 1rem;
         background: map-get($colors , light-grey );
+        margin-right: 20px;
+        overflow: hidden;
 
 
         .menu-item{
@@ -171,6 +173,9 @@ header .fa-arrow-left::before{
             
 
             /*&:hover {
+                .menu-item{
+                    margin-right:0;
+                }
                 h4,
                 p {
                   width: 50%;
@@ -187,15 +192,18 @@ header .fa-arrow-left::before{
                 padding: 1rem;
                 margin-right: 1rem;
                 display: flex;
-                align-items: flex-end;
+                align-items: flex-start;
             
             }
 
-            .menu-item__decription{
-                padding: 1rem;
+            .menu-item__description{
+                width: 100%;
+                overflow: hidden;
+                h4,p{
                 overflow: hidden;
                 white-space: nowrap;
-                
+                text-overflow: ellipsis;
+                }
             
                 
             }
@@ -216,18 +224,28 @@ header .fa-arrow-left::before{
                 width: 2rem;
                 border-radius: 1rem;
                 color: map-get($colors, light-green);
-                }
-               
+                }   
             }
-            &:hover .menu-item__check{
-                margin-right: 0;
+            &:hover {
                 
+                .menu-item__check{
+                    margin-right:0;
+                }
+                
+                .menu-item__description{
+                width: 60%;
+                h4, p {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+                }
             }
            
-            
         }
-       
     }
+
+       
    
     .commande{
         display: flex;
