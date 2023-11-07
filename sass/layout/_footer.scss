@@ -42,7 +42,7 @@ footer {
             gap: 11px;
         }
         
-        & .icon__text p {
+        & .icon__text .espacement {
             padding-left: 24px;
         }
         
@@ -50,6 +50,7 @@ footer {
             color: white;
             font-weight: 300;
         }
+        
 }
 @media (min-width: 1024px) {
 footer {

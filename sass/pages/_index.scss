@@ -248,6 +248,7 @@ h1{
           
           }
           .fa-solid{
+            cursor: pointer;
             color: transparent;
             background-image: linear-gradient(to top, map-get($colors,pink-color), map-get($colors,purple-color));
             background-clip: text;
