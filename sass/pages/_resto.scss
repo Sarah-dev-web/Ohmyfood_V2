@@ -1,4 +1,7 @@
-header .fa-arrow-left::before{
+    header .fa-arrow-left{
+    color:map-get($colors,black);
+    }
+    header .fa-arrow-left::before{
     font-size: 30px;
     position: absolute;
     left: 20px;
@@ -35,7 +38,6 @@ header .fa-arrow-left::before{
             right: 20px;
             bottom : 36px;
             
-           /* transform: translateY(-50%);*/
              
         }
        
@@ -171,19 +173,6 @@ header .fa-arrow-left::before{
             padding-right: 0;
             background-color: white;
             
-
-            /*&:hover {
-                .menu-item{
-                    margin-right:0;
-                }
-                h4,
-                p {
-                  width: 50%;
-                  overflow: hidden;
-                  white-space: nowrap;
-                  text-overflow: ellipsis;
-                }
-              } */
             
             
             .menu-item__prix{

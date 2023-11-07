@@ -167,7 +167,7 @@ footer .footer__text a {
   background-color: #fff;
   opacity: 0.9;
   animation: disappear 1s ease forwards;
-  animation-delay: 5s;
+  animation-delay: 2s;
 }
 .loader i, .loader h3 {
   background: linear-gradient(to top, #FF79DA, #9356DC);
@@ -404,6 +404,10 @@ footer .footer__text a {
     text-align: center;
   }
 }
+header .fa-arrow-left {
+  color: #000;
+}
+
 header .fa-arrow-left::before {
   font-size: 30px;
   position: absolute;
@@ -436,7 +440,6 @@ header .fa-arrow-left::before {
   border: 0;
   right: 20px;
   bottom: 36px;
-  /* transform: translateY(-50%);*/
 }
 .resto__title .heart .fa-regular {
   opacity: 1;
@@ -547,18 +550,6 @@ header .fa-arrow-left::before {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   padding-right: 0;
   background-color: white;
-  /*&:hover {
-      .menu-item{
-          margin-right:0;
-      }
-      h4,
-      p {
-        width: 50%;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-      }
-    } */
 }
 .menus .menus__category .menu-item .menu-item__prix {
   margin-left: auto;
